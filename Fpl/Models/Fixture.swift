@@ -11,7 +11,7 @@ import Foundation
 struct Fixture: Hashable, Codable, Identifiable {
     var id: Int
     var event: Int?
-    var kickoff_time: Date?
+//    var kickoff_time: Date?
     var team_a: Int
     var team_h: Int
     var started: Bool?

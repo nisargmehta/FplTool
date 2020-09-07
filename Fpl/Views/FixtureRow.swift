@@ -10,13 +10,13 @@ import SwiftUI
 
 struct FixtureRow: View {
     var fixture: Fixture
-
+    let teams = ["Arsenal","Villa","Brighton","Burnley","Chelsea","Palace","Everton","Fulham","Leeds","Leicester","Liverpool","Man City","Man Utd","Newcastle","Sheffield","Southampton","Spurs","West Brom","West Ham","Wolves"]
     var body: some View {
         HStack {
             Spacer()
-            Text(String(fixture.team_h))
+            Text(teams[fixture.team_h-1])
             Text(" vs ")
-            Text(String(fixture.team_a))
+            Text(teams[fixture.team_a-1])
             Spacer()
         }
     }
